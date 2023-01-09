@@ -4,9 +4,12 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+
+    font-family: 'Overpass', sans-serif;
+    caret-color: transparent;
 }
 body{
-    background-color: #1f1f38;
+    background-color: hsl(240, 29%, 17%);
     background-image: url(../assets/bg-texture.png);
     color: whitesmoke;
 }
@@ -20,10 +23,49 @@ body{
 .header_titulo{
     font-size: calc(25px + 2vw);
 }
+.header_asideLeft{
+    position: relative;
+}
+.header_asideTextContainer{
+    position: absolute;
+    bottom: 20vh;
+    left: 10%;
+}
+.header_asideText{
+    writing-mode: vertical-lr;
+    color: #00aeff;
+    font-size: 20px;
+}
+.header_line{
+    border-left: 3px solid #00aeff;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5px;
+    top: 0;
+}
+.header_lineContainer{
+    position: relative;
+}
+.header_linksContainer{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    right: 10%;
+    bottom: 20vh;
+}
+.header_linkIcon{
+    color: #00aeff;
+    font-size: 30px;
+}
+.header_linkIcon:hover{
+    color: #0086c4;
+    transform: scale(1.2);
+}
 .header_containerBotones{
     display: flex;
     flex-direction: row;
-
     justify-content: center;
 }
 .header_boton{
