@@ -7,104 +7,201 @@
 
     font-family: 'Overpass', sans-serif;
     caret-color: transparent;
+    scroll-behavior: smooth;
 }
 body{
     background-color: hsl(240, 29%, 17%);
     background-image: url(../assets/bg-texture.png);
     color: whitesmoke;
 }
-.header{
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-}
-.header_center{
-    text-align: center;
-}
-.header_titulo{
-    font-size: calc(25px + 2vw);
-}
-.header_asideLeft{
-    position: relative;
-}
-.header_asideTextContainer{
-    position: absolute;
-    bottom: 20vh;
-    left: 10%;
-}
-.header_asideText{
-    writing-mode: vertical-lr;
-    color: #00aeff;
-    font-size: 20px;
-}
-.header_line{
-    border-left: 3px solid #00aeff;
-    height: 150px;
-    position: absolute;
-    left: 50%;
-    margin-left: -1.5px;
-    top: 0;
-}
-.header_lineContainer{
-    position: relative;
-}
-.header_linksContainer{
-    display: flex;
-    flex-direction: column;
+/*@media screen and (min-width: 767px){*/
+    .nav{
+        position: fixed;
+        
+        width: calc(200px + 20%);
+        height: 75px;
 
-    position: absolute;
-    right: 10%;
-    bottom: 20vh;
-}
-.header_linkIcon{
-    color: #00aeff;
-    font-size: 30px;
-}
-.header_linkIcon:hover{
-    color: #0086c4;
-    transform: scale(1.2);
-}
-.header_containerBotones{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.header_boton{
-    font-size: calc(15px + 1vw);
-    border: 1px solid #00aeff;
-    color: #00aeff;
-    border-radius: 20px 20px 20px 20px;
+        border-radius: 50px 50px 50px 50px;
+        bottom: 5vh;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        left: 0;
+        right: 0;
+
+        box-shadow: 0px 0px 25px #222;
+        backdrop-filter: blur(10px);
+        
+        z-index: 1;
+    }
+    .nav_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 100%;
+    }
+    .nav_icon{
+        color: whitesmoke;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+    }
+    .nav_icon:hover{
+        color: #1f1f38;
+        background-color: #00aeff;
+    }
+    .cuerpo{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+    }
+    .header_center{
+        text-align: center;
+    }
+    .titulo{
+        font-size: calc(25px + 2vw);
+    }
+    .tituloColores{
+        font-size: calc(20px + 1.5vw);
+    }
+    .subTitulo{
+        font-weight: 500;
+        font-style: italic;
+        color: rgb(221, 221, 221);
+        font-size: calc(10px + 1vw);
+    }
+    .marginTopChico{
+        margin-top: 15px;
+    }
+    .marginTopGrande{
+        margin-top: 50px;
+    }
+    .header_asideLeft{
+        position: relative;
+        height: 100vh;
+    }
+    .header_asideTextContainer{
+        position: absolute;
+        bottom: 20vh;
+        left: 10%;
+    }
+    .header_asideText{
+        writing-mode: vertical-lr;
+        color: #00aeff;
+        font-size: 20px;
+    }
+    .header_line{
+        border-left: 3px solid #00aeff;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        margin-left: -1.5px;
+        top: 0;
+    }
+    .header_lineContainer{
+        position: relative;
+    }
+    .header_linksContainer{
+        display: flex;
+        flex-direction: column;
     
-    height: 100px;
-    width: 250px;
+        position: absolute;
+        right: 10%;
+        bottom: 20vh;
+    }
+    .header_linkIcon{
+        color: #00aeff;
+        font-size: calc(15px + 45%);
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+    .header_linkIcon:hover{
+        color: #0086c4;
+        transform: scale(1.2);
+    }
+    .header_containerBotones{
+        margin-top: calc( 1px + 1.5%);
+        width: 100%;
+        /*
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;*/
+    }
+    .header_linkBotones{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .header_boton{
+        font-size: calc(15px + 1vw);
+        border: 1px solid #00aeff;
+        color: #00aeff;
+        border-radius: 20px 20px 20px 20px;
+        
+        height: calc(55px + 2vw);
+        width: calc(230px + 5vw);
+        
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .header_boton:hover{
+        color: whitesmoke;
+        margin: 0px auto;
+    }
+    .botonDerecho{
+        background-color: #00aeff;
+        color: #1f1f38;
+    }
+    .header_containerImagen{
+        position: absolute;
+        bottom: 0;
 
-    display: table-cell;
-    vertical-align: middle;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .header_containerImagenHijo{
+        width: calc( 200px + 15%);
+        height: 65vh;
+    
+        position: relative;
+    
+        border-radius: 500px 500px 0px 0px;
+    
+        margin: 0px auto;
+        background-image: linear-gradient(180deg, rgb(0, 174, 255), #1f1f381f);
+    }
+    .header_imagen{
+        height: auto;
+        width: calc(105px + 50%);
+
+        border-radius: 250px 250px 0 0;
+
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        position: absolute;
+    }
+/*
 }
-.botonDerecho{
-    background-color: #00aeff;
-    color: #1f1f38;
+@media screen and (max-width: 480px){
+    body{   
+        background-color: red;
+    }
 }
-.header_containerImagen{
-    width: 600px;
-    height: 1000px;
-
-    position: relative;
-
-    border-radius: 500px 500px 0px 0px;
-
-    margin: 0px auto;
-    background-image: linear-gradient(180deg, rgb(0, 174, 255), #1f1f381f);
-}
-.header_imagen{
-    height: auto;
-    width: 500px;
-
-    bottom: 0;
-    left: 0px;
-    right: 0px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    position: absolute;
+@media screen and (min-width: 480px) and (max-width: 767px){
+    body{   
+        background-color: blue;
+    }
 }
