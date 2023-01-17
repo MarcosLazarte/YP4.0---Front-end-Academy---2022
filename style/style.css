@@ -188,6 +188,8 @@ body{
 
         border-radius: 250px 250px 0 0;
 
+        position: absolute;
+
         bottom: 0;
         left: 0px;
         right: 0px;
