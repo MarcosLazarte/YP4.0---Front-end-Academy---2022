@@ -13,7 +13,7 @@ body{
     background-color: hsl(240, 29%, 17%);
     background-image: url(../assets/bg-texture.png);
     color: whitesmoke;
-    /*background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));*/
+    background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));
 
 }
 /*@media screen and (min-width: 767px){*/
@@ -157,7 +157,8 @@ body{
         margin: 0px auto;
     }
     .botonDerecho{
-        background-color: #00aeff;
+        /*background-color: #00aeff;*/
+        background-color: rgb(255, 212, 220);
         color: #1f1f38;
     }
     .header_containerImagen{
@@ -178,7 +179,8 @@ body{
         border-radius: 500px 500px 0px 0px;
     
         margin: 0px auto;
-        background-image: linear-gradient(180deg, rgb(0, 174, 255), #1f1f381f);
+        /*background-image: linear-gradient(180deg, rgb(0, 174, 255), #1f1f381f);*/
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.473), rgba(255, 192, 203, 0.466));
     }
     .header_imagen{
         height: auto;
