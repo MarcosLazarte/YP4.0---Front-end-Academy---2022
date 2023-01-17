@@ -13,6 +13,8 @@ body{
     background-color: hsl(240, 29%, 17%);
     background-image: url(../assets/bg-texture.png);
     color: whitesmoke;
+    /*background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));*/
+
 }
 /*@media screen and (min-width: 767px){*/
     .nav{
@@ -60,7 +62,7 @@ body{
     }
     .cuerpo{
         display: grid;
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 5% 90% 5%;
     }
     .header_center{
         text-align: center;
@@ -190,8 +192,58 @@ body{
     
         margin-left: auto;
         margin-right: auto;
-    
-        position: absolute;
+    }
+    .cuerpo_AcercaDeMi{
+        display: flex;
+        flex-direction: row;
+    }
+    .cuerpo_AcercaDeMi-imagen{
+        margin-right: 5%;
+    }
+    .cuerpo_containerTarjetas{
+        display: flex;
+        flex-direction: inline;
+    }
+    .cuerpo_tarjeta{
+        width: 40%;
+        height: 200px;
+
+        margin: 1%;
+        border-radius: 20px;
+
+        background-color: #3636aa;
+    }
+    .main_rectangulo1{
+        width: 370px;
+        height: 490px;
+
+        border-radius: 40px;
+        rotate: -10deg;
+
+        background-color: #0086c473;
+    }
+    .main_rectangulo2{
+        width: 370px;
+        height: 490px;
+
+        rotate: 10deg;
+
+        background-color: #00aeff;
+        border-radius: 40px;
+    }
+    .main_imagen{
+        width: 370px;
+        height: auto;
+
+        rotate: 10deg;
+        border-radius: 40px;
+    }
+    footer{
+        border-top: 1px solid #0086c4;
+        background-color: rgb(10, 10, 10);
+
+        width: 100%;
+        height: 500px;
     }
 /*
 }
