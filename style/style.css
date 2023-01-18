@@ -14,7 +14,6 @@ body{
     background-image: url(../assets/bg-texture.png);
     color: whitesmoke;
     background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));
-
 }
 /*@media screen and (min-width: 767px){*/
     .nav{
