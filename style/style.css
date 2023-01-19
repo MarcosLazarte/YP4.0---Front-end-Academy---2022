@@ -326,13 +326,30 @@ body{
         width: 100%;
         height: 500px;
     }
-/*
-}
+
 @media screen and (max-width: 480px){
     body{   
         background-color: red;
+        overflow-x: hidden;
     }
-}
+    nav{
+        bottom: 10vh;
+    }
+    .main_imagen{
+        width: 250px;
+    }
+    .main_rectangulo1{
+        width: 250px;
+        height: 325px;
+    }
+    .main_rectangulo2{
+        width: 250px;
+        height: 325px;
+    }
+    .cuerpo_AcercaDeMi{
+        flex-direction: column;
+    }
+}/*
 @media screen and (min-width: 480px) and (max-width: 767px){
     body{   
         background-color: blue;
