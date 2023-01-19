@@ -13,5 +13,7 @@ function colorAleatorio(){  /*La idea es poder entregar un color diferente en ca
 
 function charlemos(){
     let fondo = document.getElementById("bodyID");
+    let foot = document.getElementById("footerID")
     fondo.style.background = 'linear-gradient('+colorAleatorio()+', '+colorAleatorio()+')';
+    foot.style.background = 'linear-gradient('+colorAleatorio()+', '+colorAleatorio()+')';
 }

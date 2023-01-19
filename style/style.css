@@ -14,6 +14,7 @@ body{
     background-image: url(../assets/bg-texture.png);
     color: whitesmoke;
     background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));
+    transition: 1s ease;
 }
 /*@media screen and (min-width: 767px){*/
     .nav{
@@ -59,9 +60,13 @@ body{
         color: #1f1f38;
         background-color: #00aeff;
     }
-    .cuerpo{
+    .gridAncho{
         display: grid;
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 10% 80% 10%;
+    }
+    .gridAjustado{
+        display: grid;
+        grid-template-columns: 2.5% 95% 2.5%;
     }
     .header_center{
         text-align: center;
@@ -150,15 +155,31 @@ body{
         
         display: table-cell;
         vertical-align: middle;
+
+        transition-property: 2s ease;
     }
     .header_boton:hover{
         color: whitesmoke;
         margin: 0px auto;
+        transform: scale(1.05);
+    }
+    .header_boton:active{
+        border: 1px solid #3636aa;
+        color: #3636aa;
     }
     .botonDerecho{
-        /*background-color: #00aeff;*/
+        /*background-color: #00aeff;
         background-color: rgb(255, 212, 220);
-        color: #1f1f38;
+        color: #1f1f38;*/
+        background-color: rgba(255, 192, 203, 0.466);
+        color: whitesmoke;
+    }
+    .botonDerecho:hover{
+        color: #0086c4;
+    }
+    .botonDerecho:active{
+        border: 1px solid #3636aa;
+        color: #3636aa;
     }
     .header_containerImagen{
         position: absolute;
@@ -192,29 +213,86 @@ body{
         bottom: 0;
         left: 0px;
         right: 0px;
-    
-        margin-left: auto;
-        margin-right: auto;
+
+        margin: 0 auto;
     }
     .cuerpo_AcercaDeMi{
         display: flex;
         flex-direction: row;
+
+        margin-top: 100px;
     }
     .cuerpo_AcercaDeMi-imagen{
         margin-right: 5%;
+
+        width: 40%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .cuerpo_AcercaDeMi-texto{
+        margin-left: 5%;
+
+        width: 40%;
     }
     .cuerpo_containerTarjetas{
         display: flex;
-        flex-direction: inline;
+        justify-content: center;
     }
     .cuerpo_tarjeta{
-        width: 40%;
-        height: 200px;
+        width: calc(10% + 250px);
+        height: 250px;
 
         margin: 1%;
         border-radius: 20px;
 
-        background-color: #3636aa;
+        background-color: #3636aac9;
+        border: solid 1px #3636aa;
+
+        display: grid;
+        grid-template-rows: 25% 25% 15% 35%;
+        
+    }
+    .cuerpo_icono{
+        font-size: calc(30px);
+        color: #0086c4;
+    }
+    .cuerpo_descripcion{
+        line-height: 40px;
+        text-align: justify;
+
+        margin-top: 30px;
+    }
+    .cuerpo_charlemos{
+        float: left;
+
+        margin-top: 30px;
+
+        font-size: calc(15px + 1vw);
+        border: 1px solid #00aeff;
+        
+        background-color: rgba(255, 192, 203, 0.466);
+        color: whitesmoke;
+
+        border-radius: 20px 20px 20px 20px;
+        
+        height: calc(55px + 2vw);
+        width: calc(230px + 5vw);
+        
+        display: table-cell;
+        vertical-align: middle;
+
+        transition-property: 2s ease;
+
+        cursor: pointer;
+    }
+    .cuerpo_charlemos:hover{
+        color: #0086c4;
+        transform: scale(1.05);
+    }
+    .cuerpo_charlemos:active{
+        border: 1px solid #3636aa;
+        color: #3636aa;
     }
     .main_rectangulo1{
         width: 370px;
