@@ -338,6 +338,19 @@ body{
     .header_containerImagenHijo{
         height: 60vh;
     }
+    .header_containerBotones{
+        background-color: violet;
+        margin-top: 10px;
+    }
+    .header_linkBotones{
+        margin-top: 10px;
+    }
+    .header_boton{
+        font-size: 15px;
+
+        height: 55px;
+        width: 230px;
+    }
     .main_imagen{
         width: 250px;
     }
@@ -351,16 +364,22 @@ body{
     }
     .cuerpo_AcercaDeMi{
         display: block;
+
+        background-color: green;
     }
     .cuerpo_AcercaDeMi-imagen{
         margin-left:  auto;
         margin-right: auto;
+
+        background-color: aqua;
     }
     .cuerpo_AcercaDeMi-texto{
         margin-left:  auto;
         margin-right: auto;
         margin-top: 50px;
         width: 100%;
+
+        background-color: white;
     }
     .cuerpo_descripcion{
         margin-left: 20px;
