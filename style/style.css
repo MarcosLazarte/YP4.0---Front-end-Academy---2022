@@ -334,12 +334,9 @@ body{
 @media screen and (max-width: 480px){
     ::-webkit-scrollbar {
         display: none;
-      }
-    .main_asideLeft{
-        background-color: orange;
     }
     body{   
-        background-color: red;
+        width: 100%;
     }
     nav{
         bottom: calc(10vh + 10px);
@@ -347,18 +344,12 @@ body{
     .header_containerImagenHijo{
         height: 60vh;
     }
-    .header_containerBotones{
-        background-color: violet;
-        margin-top: 10px;
-    }
-    .header_linkBotones{
-        margin-top: 10px;
-    }
     .header_boton{
         font-size: 15px;
 
         height: 55px;
         width: 230px;
+
     }
     .main_imagen{
         width: 250px;
@@ -366,29 +357,39 @@ body{
     .main_rectangulo1{
         width: 250px;
         height: 325px;
+        margin: 0 auto 0;
     }
     .main_rectangulo2{
         width: 250px;
         height: 325px;
     }
     .cuerpo_AcercaDeMi{
+        margin-top: 0;
         display: block;
-
-        background-color: green;
     }
     .cuerpo_AcercaDeMi-imagen{
-        margin-left:  auto;
-        margin-right: auto;
+        margin-right: 0;
+        margin-left: 0;
 
-        background-color: aqua;
+        width: 100%;
+        height: 370px;
+        
+        align-content: center;
+        align-items: center;
+
+        justify-content: center;
+
+        position: relative;
+
+        overflow: hidden;
+
     }
     .cuerpo_AcercaDeMi-texto{
-        margin-left:  auto;
-        margin-right: auto;
+        margin-left:  0px;
+        margin-right: 0px;
+        
         margin-top: 50px;
         width: 100%;
-
-        background-color: white;
     }
     .cuerpo_descripcion{
         margin-left: 20px;
