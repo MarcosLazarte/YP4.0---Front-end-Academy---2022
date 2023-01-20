@@ -378,6 +378,9 @@ body{
     .cuerpo_charlemos{
         float: none;
     }
+    .footer{
+        width: 100%;
+    }
 }/*
 @media screen and (min-width: 480px) and (max-width: 767px){
     body{   
