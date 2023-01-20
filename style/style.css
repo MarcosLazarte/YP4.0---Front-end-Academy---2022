@@ -335,6 +335,9 @@ body{
     nav{
         bottom: 10vh;
     }
+    .header_containerImagenHijo{
+        height: 60vh;
+    }
     .main_imagen{
         width: 250px;
     }
@@ -347,7 +350,30 @@ body{
         height: 325px;
     }
     .cuerpo_AcercaDeMi{
-        flex-direction: column;
+        display: block;
+    }
+    .cuerpo_AcercaDeMi-imagen{
+        margin-left:  auto;
+        margin-right: auto;
+    }
+    .cuerpo_AcercaDeMi-texto{
+        margin-left:  auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .cuerpo_descripcion{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cuerpo_containerTarjetas{
+        width: 100%;
+    }
+    .cuerpo_tarjeta{
+        width: 400px;
+    }
+    .cuerpo_charlemos{
+        float: none;
     }
 }/*
 @media screen and (min-width: 480px) and (max-width: 767px){
