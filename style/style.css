@@ -15,6 +15,7 @@ body{
     color: whitesmoke;
     background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));
     transition: 1s ease;
+    width: 100%;
 }
 /*@media screen and (min-width: 767px){*/
     .nav{
@@ -67,6 +68,9 @@ body{
     .gridAjustado{
         display: grid;
         grid-template-columns: 2.5% 95% 2.5%;
+    }
+    .main_asideLeft{
+        position: relative;
     }
     .header_center{
         text-align: center;
@@ -328,12 +332,17 @@ body{
     }
 
 @media screen and (max-width: 480px){
+    ::-webkit-scrollbar {
+        display: none;
+      }
+    .main_asideLeft{
+        background-color: orange;
+    }
     body{   
         background-color: red;
-        overflow-x: hidden;
     }
     nav{
-        bottom: 10vh;
+        bottom: calc(10vh + 10px);
     }
     .header_containerImagenHijo{
         height: 60vh;
