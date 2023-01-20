@@ -358,10 +358,14 @@ body{
         flex-wrap: wrap;
         justify-content: space-around;
 
-        background-color: #3636aa;
-        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
+        background-color: #3636aa;
         border-radius: 30px;
+    }
+    .portafolio_tarjetas{
+        margin: 20px
     }
     .portafolio_imagen{
         width: 70%;
@@ -426,7 +430,6 @@ body{
         position: relative;
 
         overflow: hidden;
-
     }
     .cuerpo_AcercaDeMi-texto{
         margin-left:  0px;
@@ -450,8 +453,13 @@ body{
     }
     .cuerpo_experiencia{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto auto;
+    }
+    .cuerpo_experiencia-front{
+        width: 90%;
+        margin-left:  auto;
+        margin-right: auto;
     }
     .footer{
         width: 100%;
