@@ -361,11 +361,18 @@ body{
         padding-top: 5px;
         padding-bottom: 5px;
 
-        background-color: #3636aa;
         border-radius: 30px;
+        background: linear-gradient(#00aeff6e, #3636aa71);
     }
     .portafolio_tarjetas{
-        margin: 20px
+        margin: 20px;
+        padding-top: 30px;
+
+        width: 100%;
+        height: auto;
+        border-radius: 0 90% / 0 100%;
+        background-color: #3636aac9;
+        border: solid 1px #3636aa;
     }
     .portafolio_imagen{
         width: 70%;
