@@ -15,7 +15,6 @@ body{
     color: whitesmoke;
     background: linear-gradient(rgba(0, 0, 255, 0.267), rgba(255, 0, 0, 0.185));
     transition: 1s ease;
-    width: 100%;
 }
 /*@media screen and (min-width: 767px){*/
     .nav{
@@ -353,6 +352,20 @@ body{
     .cuerpo_experiencia-icono{
         margin: 2.5px auto 0;
         color: #0086c4;
+    }
+    .portafolio_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        background-color: #3636aa;
+        padding: 10px;
+
+        border-radius: 30px;
+    }
+    .portafolio_imagen{
+        width: 70%;
+        border-radius: 30px;
     }
     footer{
         border-top: 1px solid #0086c4;
