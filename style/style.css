@@ -9,6 +9,22 @@
     caret-color: transparent;
     scroll-behavior: smooth;
 }
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}/*
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}*/
 body{
     background-color: hsl(240, 29%, 17%);
     background-image: url(../assets/bg-texture.png);
