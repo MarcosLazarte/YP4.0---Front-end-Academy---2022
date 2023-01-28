@@ -1,3 +1,4 @@
+
 function colorAleatorio(){  /*La idea es poder entregar un color diferente en cada llamada, para así, generar un
                             boton que cambie aleatoriamente los colores de los elementos en pantalla*/
     let valorMax = 0xFFFFFF;                    //Establecemos el valor max que puede tomar los colores
@@ -28,5 +29,36 @@ const observer = new IntersectionObserver((entries) => {
   }
   });
 });
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+const contactame_form = document.getElementById("contactame_form");
+
+contactame_form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const contactame_nombre = contactame_form['contactame_nombre'].value;
+    const contactame_email = contactame_form['contactame_email'].value;
+    const contactame_mensaje = contactame_form['contactame_mensaje'].value;
+    /*
+    const mensaje = await db.collection("mensajes").doc().set({
+        nombre: contactame_nombre,
+        email: contactame_email,
+        mensaje: contactame_mensaje
+    })*/
+    db.collection("mensajes").add({
+        nombre: contactame_nombre,
+        email: contactame_email,
+        mensaje: contactame_mensaje
+    })
+    .then((docRef) => {
+        console.log("Documento con el ID: ", docRef.id);
+    })
+    .catch((error) => {
+        console.error("Error al agregar el documento: ", error);
+    });
+    alert("Mensaje enviado")
+})
+

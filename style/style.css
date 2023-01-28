@@ -341,7 +341,7 @@ body{
     .cuerpo_experiencia{
         width: 100%;
         display: grid;
-        grid-template-columns: 49% 2% 49%;
+        grid-template-columns: 15% 34% 2% 35% 14%;
     }
     .cuerpo_experiencia-front{
         border-radius: 50px;
@@ -401,10 +401,23 @@ body{
         width: 100%;
         height: 200px;
     }
-    .posibleImgSet{
+    .posibleImgSet{/* El que anda bien
         display: flex;
         width: 600px;
-        height: 430px;
+        height: 430px;*/
+        display: flex;
+        width: 900px;
+        height: 500px;
+
+        overflow-x: hidden;
+    }
+    .portafolio_link{
+        color: white;
+        text-align: left;
+        align-self: flex-end;
+
+        padding-left: 5px;
+        padding-bottom: 5px;
     }
     .posib{
         width: 0px;
@@ -420,28 +433,33 @@ body{
         filter: contrast(120%);
     }
     .posibleImg1{
+        display: flex;
         background-image: url("https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT");
         background-size: cover;
         background-color: wheat;
     }
     .posibleImg2{
+        display: flex;
         background-image: url("https://drive.google.com/uc?/export=view&id=1UIYBd3iStcShFULGva3DA7HfIYMtNYB4");
         background-size: cover;
         background-color: rgb(210, 245, 128);
     }
     .posibleImg3{
+        display: flex;
         background-image: url("https://drive.google.com/uc?/export=view&id=1cNhnNxuBSYYq315dWHT06WSatm3yTuho");
         background-size: cover;
         background-color: rgb(165, 137, 241);
     }
     .posibleImg4{
+        display: flex;
         background-image: url("https://drive.google.com/uc?/export=view&id=1PebuhpQ3EUHaZaPlTGOuSHuN4ykoBaTN");
         background-size: cover;
         background-color: rgb(240, 126, 234);
     }
     .posibleImg5{
+        display: flex;
         background-image: url("https://drive.google.com/uc?/export=view&id=1pYDpMjF4smkgDXhsWlRWLvBQLbgul3oq");
-        background-size: 390px;
+        background-size: 500px;
         background-position: center center;
         background-color: rgb(179, 235, 245);
     }

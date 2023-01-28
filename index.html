@@ -118,6 +118,7 @@
                 <h3 id="miExperiencia" class="subTitulo marginTopGrande">Que habilidades tengo?</h3>
                 <h2 class="titulo">Mi Experiencia</h2>
                 <section class="cuerpo_experiencia">
+                    <div></div>
                     <article class="cuerpo_experiencia-front marginTopGrande">
                         <h2 class="subTitulo marginTopChico">Desarrollo como Frontender</h2>
                         <div class="cuerpo_experiencia-contenedorTarjetas">
@@ -213,59 +214,56 @@
                             </div>
                         </div>
                     </article>
-
+                    <div></div>
                 </section>
             </section>
             <section>
                 <h3 id="portafolio" class="subTitulo marginTopGrande">Mis trabajos</h3>
                 <h2 class="titulo">Portfolio</h2>
                 <section class="portafolio_container">
-                    <div class="portafolio_tarjetas">
-                        <img class="portafolio_imagen" src="https://media.licdn.com/dms/image/C4D2DAQGn6APM6hho8A/profile-treasury-image-shrink_1920_1920/0/1658697754759?e=1675396800&v=beta&t=mxJRyitFrxPqd6G-Ryf6cFLdbwYvQWcQucUjLVOUaXk" alt="">
-                        <h3>La MEDIchin</h3>
-                        <div>
-                            <button>Github</button>
-                            <a target="_blank" href="https://marcoslazarte.github.io/Coderhouse-Javascript/"><button>   Live Demo</button></a>
+                    
+                    <section class="posibleImgSet">
+                        <div class="posibleImg1 posib">
+                            <div class="portafolio_link">
+                                <h2>Hollow Knight</h2>
+                                <a href=""><h3>Github</h3></a>
+                                <a href=""><h4>Live Demo</h4></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portafolio_tarjetas">
-                        <img class="portafolio_imagen" src="https://media.licdn.com/dms/image/C4D2DAQEOJGkpL2Rhrw/profile-treasury-image-shrink_800_800/0/1658432886396?e=1674788400&v=beta&t=6FRL_SyU44XCRrrrVi7Toukw76P-ec12dYI4pstHlGk" alt="">
-                        <h3>theVoyager</h3>
-                        <div>
-                            <button>Github</button>
-                            <a target="_blank" href="https://marcoslazarte.github.io/Coderhouse-ReactJS/"><button>   Live Demo</button></a>
+                        <div class="posibleImg2 posib">
+                            <div class="portafolio_link">
+                                <h2>Venta Depas</h2>
+                                <a href=""><h3>Github</h3></a>
+                                <a href=""><h4>Live Demo</h4></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portafolio_tarjetas">
-                        <img class="portafolio_imagen" src="https://media.licdn.com/dms/image/C4D2DAQEIdY31H_4Zvw/profile-treasury-image-shrink_800_800/0/1658702973264?e=1674792000&v=beta&t=YK71tk2a24IT-3zAlYu5uhZZNaS9TyTe6I9XSsar9b4" alt="">
-                        <h3>Hollow Knight - Tributo</h3>
-                        <div>
-                            <button>Github</button>
-                            <a target="_blank" href="https://marcoslazarte.github.io/Coderhouse-DesarrolloWeb/resumen.html"><button>   Live Demo</button></a>
+                        <div class="posibleImg3 posib">
+                            <a class="portafolio_link" href=""><h2>Verano de Cody</h2></a>
                         </div>
-                    </div>
+                        <div class="posibleImg4 posib">
+                            <a class="portafolio_link" href=""><h2>La MEDIchin</h2></a>
+                        </div>
+                        <div class="posibleImg5 posib">
+                            <a class="portafolio_link" href=""><h2>theVoyager</h2></a>
+                        </div>
+                    </section>
                 </section>
             </section>
             <section>
-                <h3>prueba</h3>
-                <h2>GALERIA</h2>
-                <section class="posibleImgSet">
-                    <div class="posibleImg1 posib">
-                        <a href=""><h2>Hollow Knight</h2></a>
+                <h3 class="subTitulo marginTopGrande">Aca estoy!</h3>
+                <h2 class="titulo">Contacto</h2>
+                <form id="contactame_form">
+                    <div>
+                        <input type="text" id="contactame_nombre" placeholder="Nombre">
                     </div>
-                    <div class="posibleImg2 posib">
-                        <h2>Venta Depas</h2>
+                    <div>
+                        <input type="text" id="contactame_email" required placeholder="Email">
                     </div>
-                    <div class="posibleImg3 posib">
-                        <h2>Verano de Cody</h2>
+                    <div>
+                        <textarea type="text" id="contactame_mensaje" required placeholder="Cómo estas?Qué te parecio la página?"></textarea>
                     </div>
-                    <div class="posibleImg4 posib">
-                        <h2>La MEDIchin</h2>
-                    </div>
-                    <div class="posibleImg5 posib">
-                        <h2>theVoyager</h2>
-                    </div>
-                </section>
+                    <button id="contactame_enviar">Enviar mensaje</button>
+                </form>
             </section>
         </section>
         <aside class="main_asideLeft"></aside><!--ColumnaDerecha-->
@@ -273,6 +271,23 @@
     <footer id="footerID">
         asdf
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBhHH1FYXZYa6-HUiK7ddM0CLpPLJICS0Y",
+            authDomain: "yp40-frontend.firebaseapp.com",
+            projectId: "yp40-frontend",
+            storageBucket: "yp40-frontend.appspot.com",
+            messagingSenderId: "496235175161",
+            appId: "1:496235175161:web:dee20825febb9247a61628",
+            measurementId: "G-MHV6PV1Z5D"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
