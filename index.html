@@ -31,7 +31,7 @@
             <li><a href="#cuerpoAcercaDeMi"><i class="bi bi-person nav_icon"></i></a></li>
             <li><a href="#miExperiencia"><i class="bi bi-journal nav_icon"></i></a></li>
             <li><a href="#portafolio"><i class="bi bi-heart nav_icon"></i></a></li>
-            <li><i class="bi bi-chat-dots nav_icon"></i></li>
+            <li><a href="#contactame"><i class="bi bi-chat-dots nav_icon"></i></a></li>
         </ul>
     </nav>
     <header class="gridAncho">
@@ -51,7 +51,7 @@
             <h3 class="subTitulo marginTopChico">Desarrollador</h3>
             <div class="header_containerBotones">
                 <a class="header_linkBotones asdf" href="assets/cv_lazarteMarcos.pdf" download><div class="header_boton">Descargar CV</div></a>
-                <a class="header_linkBotones" href=""><div class="header_boton botonDerecho">Charlemos</div></a>
+                <a class="header_linkBotones" href="#contactame"><div class="header_boton botonDerecho">Charlemos</div></a>
             </div>
 
             <div class="header_containerImagen">
@@ -75,7 +75,7 @@
                 <h2 class="titulo hidden">Acerca de mi</h2>
                 <section class="cuerpo_AcercaDeMi">
 
-                    <article class="cuerpo_AcercaDeMi-imagen hidden">
+                    <article class="cuerpo_AcercaDeMi-imagen">
                         <div class="main_rectangulo1">
                             <div class="main_rectangulo2">
                                 <img class="main_imagen" src="assets/aky2.jpg" alt="aky">
@@ -109,14 +109,14 @@
                             estoy perfeccionandome en HTML, CSS, JavaScript y REACT, pero a la par me gusta leer libros
                             de Python dado que a la larga me gustaría poder manejar grandes volumenes de información.
                         </p>
-                        <button class="cuerpo_charlemos">Charlemos!</button>
+                        <button class="cuerpo_charlemos"><a href="#contactame">Charlemos!</a></button>
                     </article>
 
                 </section>
             </section>
             <section>
-                <h3 id="miExperiencia" class="subTitulo marginTopGrande">Que habilidades tengo?</h3>
-                <h2 class="titulo">Mi Experiencia</h2>
+                <h3 id="miExperiencia" class="subTitulo marginTopGrande hidden">Que habilidades tengo?</h3>
+                <h2 class="titulo hidden">Mi Experiencia</h2>
                 <section class="cuerpo_experiencia">
                     <div></div>
                     <article class="cuerpo_experiencia-front marginTopGrande">
@@ -218,58 +218,72 @@
                 </section>
             </section>
             <section>
-                <h3 id="portafolio" class="subTitulo marginTopGrande">Mis trabajos</h3>
-                <h2 class="titulo">Portfolio</h2>
+                <h3 id="portafolio" class="subTitulo marginTopGrande hidden">Mis trabajos</h3>
+                <h2 class="titulo hidden">Portfolio</h2>
                 <section class="portafolio_container">
                     
                     <section class="posibleImgSet">
                         <div class="posibleImg1 posib">
                             <div class="portafolio_link">
                                 <h2>Hollow Knight</h2>
-                                <a href=""><h3>Github</h3></a>
-                                <a href=""><h4>Live Demo</h4></a>
+                                <a target="_blank" href="https://github.com/MarcosLazarte/Coderhouse-DesarrolloWeb"><h3>Github</h3></a>
+                                <a target="_blank" href="https://marcoslazarte.github.io/Coderhouse-DesarrolloWeb/resumen.html"><h4>Live Demo</h4></a>
                             </div>
                         </div>
                         <div class="posibleImg2 posib">
                             <div class="portafolio_link">
                                 <h2>Venta Depas</h2>
-                                <a href=""><h3>Github</h3></a>
-                                <a href=""><h4>Live Demo</h4></a>
+                                <a target="_blank" href="https://github.com/MarcosLazarte/Venta-de-Depas"><h3>Github</h3></a>
+                                <a target="_blank" href="https://marcoslazarte.github.io/Venta-de-Depas/"><h4>Live Demo</h4></a>
                             </div>
                         </div>
                         <div class="posibleImg3 posib">
-                            <a class="portafolio_link" href=""><h2>Verano de Cody</h2></a>
+                            <div class="portafolio_link">
+                                <h2>Verano de Cody</h2>
+                                <a target="_blank" href="https://github.com/MarcosLazarte/Verano-Cody"><h3>Github</h3></a>
+                                <a target="_blank" href="https://marcoslazarte.github.io/Verano-Cody/"><h4>Live Demo</h4></a>
+                            </div>
                         </div>
                         <div class="posibleImg4 posib">
-                            <a class="portafolio_link" href=""><h2>La MEDIchin</h2></a>
+                            <div class="portafolio_link">
+                                <h2>La MEDIchin</h2>
+                                <a target="_blank" href="https://github.com/MarcosLazarte/Coderhouse-Javascript"><h3>Github</h3></a>
+                                <a target="_blank" href="https://marcoslazarte.github.io/Coderhouse-Javascript/"><h4>Live Demo</h4></a>
+                            </div>
                         </div>
                         <div class="posibleImg5 posib">
-                            <a class="portafolio_link" href=""><h2>theVoyager</h2></a>
+                            <div class="portafolio_link">
+                                <h2>theVoyager</h2>
+                                <a target="_blank" href="https://github.com/MarcosLazarte/Coderhouse-ReactJS"><h3>Github</h3></a>
+                                <a target="_blank" href="https://marcoslazarte.github.io/Coderhouse-ReactJS/"><h4>Live Demo</h4></a>
+                            </div>
                         </div>
                     </section>
                 </section>
             </section>
             <section>
-                <h3 class="subTitulo marginTopGrande">Aca estoy!</h3>
-                <h2 class="titulo">Contacto</h2>
-                <form id="contactame_form">
-                    <div>
-                        <input type="text" id="contactame_nombre" placeholder="Nombre">
-                    </div>
-                    <div>
-                        <input type="text" id="contactame_email" required placeholder="Email">
-                    </div>
-                    <div>
-                        <textarea type="text" id="contactame_mensaje" required placeholder="Cómo estas?Qué te parecio la página?"></textarea>
-                    </div>
-                    <button id="contactame_enviar">Enviar mensaje</button>
-                </form>
+                <h3 id="contactame" class="subTitulo marginTopGrande hidden">Queres comentarme algo?</h3>
+                <h2 class="titulo hidden">Contacto</h2>
+                <div class="contactame_set-padre">
+                    <form class="contactame_set" id="contactame_form">
+                            <input class="contactame_input" type="text" id="contactame_nombre" placeholder="Nombre">
+                            <input class="contactame_input" type="email" id="contactame_email" required placeholder="email@domain.com">
+                            <textarea class="contactame_input contactame_textarea" type="text" id="contactame_mensaje" required placeholder="Tu mensajeiro :D"></textarea>
+                        <button class="contactame_enviar hidden" id="contactame_enviar">Enviar mensaje</button> 
+                        <div id="contactame_alert" class="contactame_alert">
+                            <p>Mensaje enviado! Muchas gracias.</p>
+                            <div class="contactame_cerrar" onclick="contactame_cerrar()">Cerrar</div>
+                        </div>
+                    </form>
+                    
+                </div>
             </section>
+            <div id="contactame_sombra" class="contactame_sombra-oculta"></div>
         </section>
         <aside class="main_asideLeft"></aside><!--ColumnaDerecha-->
     </main>
     <footer id="footerID">
-        asdf
+        © 2023
     </footer>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
